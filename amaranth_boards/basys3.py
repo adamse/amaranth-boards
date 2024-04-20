@@ -59,7 +59,7 @@ class Basys3Platform(XilinxPlatform):
             e="U5", f="V5", g="U7", dp="V7",
             attrs=Attrs(IOSTANDARD="LVCMOS33"),
         ),
-        Resource("display_anode", 0, Pins("U2 U4 V4 W4"), Attrs(IOSTANDARD="LVCMOS33")),
+        Resource("display_anode", 0, Pins("U2 U4 V4 W4", dir='o'), Attrs(IOSTANDARD="LVCMOS33")),
 
         # *ButtonResources(0, pins={
         #     "C": "U18",
